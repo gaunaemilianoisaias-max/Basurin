@@ -1,0 +1,1067 @@
+:root {
+  --verde: #00ff88;
+  --negro: #000000;
+  --blanco: #f4f4f4;
+  --gris: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--negro);
+  color: var(--blanco);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--gris);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--verde);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--verde);
+}
+
+
+.content-section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content-section h2 {
+  color: var(--verde);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.content-section.dark {
+  background-color: #1a1a1a;
+}
+
+.enlaces {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.enlaces li {
+  margin-bottom: 0.8rem;
+}
+
+.enlaces a {
+  color: var(--verde);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.enlaces a:hover {
+  text-decoration: underline;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--verde);
+  border: none;
+  color: var(--negro);
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00dd66;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #222;
+  border: 1px solid var(--verde);
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--verde);
+}
+
+.card h3 {
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--blanco);
+}
+
+form {
+  margin-top: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--verde);
+  border: none;
+  color: var(--negro);
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #00dd66;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--verde);
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--verde);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-link:hover {
+  background-color: var(--verde);
+  color: var(--negro);
+}
+.reciclaje-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.reciclaje-list li {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.reciclaje-list strong {
+  color: var(--verde);
+  font-size: 1.1rem;
+}
+
+.reciclaje-list a {
+  color: var(--verde);
+  text-decoration: underline;
+}
+
+.reciclaje-list a:hover {
+  color: #00dd66;
+}
+
+#reciclaje {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#reciclaje h3 {
+  margin-top: 2rem;
+  color: var(--verde);
+  font-size: 1.5rem;
+}
+
+.mision-vision {
+  margin-top: 2rem;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
+}
+
+.mision-vision h3 {
+  color: var(--verde);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.mision-vision p, .mision-vision ul {
+  font-size: 1rem;
+  color: var(--blanco);
+  line-height: 1.6;
+}
+
+.mision-vision ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mision-vision ul li {
+  margin-bottom: 0.5rem;
+}
+
+.hero {
+  position: relative;
+  color: var(--blanco);
+  padding: 8rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('img/contaminacion1.webp') center/cover no-repeat;
+  filter: brightness(0.75); 
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3); 
+  z-index: -1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  color: var(--verde);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.volver-inicio {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#formulario-secundario {
+  background-color: #1c1c1c;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.1);
+  margin-top: 3rem;
+}
+
+#formulario-secundario form {
+  max-width: 600px;
+  margin: auto;
+}
+
+#formulario-secundario input,
+#formulario-secundario textarea {
+  background-color: #2c2c2c;
+  color: var(--blanco);
+  border: 1px solid var(--verde);
+}
+
+#formulario-secundario input::placeholder,
+#formulario-secundario textarea::placeholder {
+  color: #aaa;
+}
+
+/* --- FOOTER MODERNO CON ICONOS --- */
+footer {
+  background-color: #111;
+  color: var(--blanco);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-top: 2px solid var(--verde);
+  position: relative;
+}
+
+footer h3 {
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+footer p {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--verde);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00dd66;
+  transform: scale(1.3);
+}
+
+footer .copyright {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-top: 1rem;
+}
+.mapa-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.mapa-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.marcador {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.marcador:hover {
+  transform: scale(1.3);
+  background-color: var(--verde);
+}
+
+.info-mapa {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--blanco);
+  font-style: italic;
+}
+
+
+/* --- Sección Reciclaje Mejorada --- */
+#reciclaje {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #0b0b0b, #1a1a1a);
+  border-radius: 12px;
+}
+
+#reciclaje h2 {
+  color: var(--verde);
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.reciclaje-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.reciclaje-card {
+  background-color: #1e1e1e;
+  border: 1px solid var(--verde);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.reciclaje-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.reciclaje-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.reciclaje-card h3 {
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+}
+
+.reciclaje-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* --- Argentina section --- */
+.argentina-title {
+  color: var(--verde);
+  margin-top: 3rem;
+}
+
+.argentina-text {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.argentina-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.argentina-list li {
+  background: #2a2a2a;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.argentina-list li:hover {
+  background: rgba(0, 255, 136, 0.1);
+}
+
+/* --- Misión y Visión --- */
+.mision-vision {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  text-align: center;
+}
+
+.mision-vision h2 {
+  color: var(--verde);
+  margin-bottom: 2rem;
+}
+
+.mision-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.mv-card {
+  background: #1b1b1b;
+  border: 1px solid var(--verde);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.25);
+}
+
+.mv-card h3 {
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+}
+
+.mv-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mv-card ul li {
+  color: #ccc;
+  margin: 0.4rem 0;
+}
+
+.reciclaje-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Cartas con fondo de imagen */
+.reciclaje-card {
+  position: relative;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  color: #fff;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reciclaje-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+}
+
+/* Capa oscura para que el texto se lea bien */
+.reciclaje-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  z-index: 1;
+}
+
+/* Texto sobre la imagen */
+.reciclaje-card .text-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.reciclaje-card h3 {
+  color: var(--verde);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.reciclaje-card p {
+  font-size: 0.95rem;
+  color: #eaeaea;
+}
+ .casos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.caso-card {
+  position: relative;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  color: #fff;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caso-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+}
+
+.caso-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+  z-index: 1;
+}
+
+.caso-card .text-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.caso-card h3 {
+  color: var(--verde);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.caso-card p {
+  font-size: 0.95rem;
+  color: #eaeaea;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.5);
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 0;
+}
+
+.card * {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.btn-link {
+  color: #fff;
+  background: #2ecc71;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background: #27ae60;
+}
+
+.footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ff88;
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 60px;
+  position: relative;
+  border-top: 3px solid #00ff88;
+}
+
+.footer-content h3 {
+  font-size: 1.6em;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 32px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ff88;
+  transform: scale(1.25);
+}
+
+.footer p {
+  font-size: 0.9em;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+#quiz-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+  text-align: center;
+}
+
+#quiz-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.opciones-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-opcion {
+  padding: 0.75rem 1rem;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid var(--verde);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1 1 45%;
+  transition: 0.3s;
+}
+
+.btn-opcion:hover {
+  background-color: var(--verde);
+  color: #000;
+}
+
+#siguiente {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--verde);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* === Carrusel Ambiental Mejorado === */
+.carousel-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #0b0b0b, #1a1a1a);
+  color: var(--blanco);
+}
+
+.carousel-section h2 {
+  color: var(--verde);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 2px solid var(--verde);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  image-rendering: auto; /* evita pixelado */
+  border-radius: 15px;
+}
+
+/* === Botones del carrusel === */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.65);
+  color: var(--verde);
+  border: 2px solid var(--verde);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.carousel-btn:hover {
+  background: var(--verde);
+  color: var(--negro);
+  transform: translateY(-50%) scale(1.15);
+}
+
+.carousel-btn.prev {
+  left: 15px;
+}
+
+.carousel-btn.next {
+  right: 15px;
+}
+
+/* === Indicadores opcionales === */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+  gap: 0.6rem;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #555;
+  border: 2px solid var(--verde);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.carousel-dot.active {
+  background: var(--verde);
+  transform: scale(1.2);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+
+  .carousel-track img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+
+  .carousel-section h2 {
+    font-size: 1.7rem;
+  }
+}
+/* === Sección Nosotros centrada === */
+#nosotros {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #0b0b0b, #1a1a1a);
+}
+
+#nosotros h2 {
+  color: var(--verde);
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* Contenedor de cartas centrado */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra horizontalmente */
+  align-items: stretch; /* iguala la altura */
+  gap: 2rem;
+  max-width: 1100px; /* limita el ancho total */
+  margin: 0 auto; /* centra todo el bloque */
+  padding: 2rem 0;
+}
+
+/* Estilo de cada carta */
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid var(--verde);
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  color: var(--blanco);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.35);
+}
+
+/* Imagen de la carta */
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--verde);
+  margin-bottom: 1rem;
+}
+
+/* Títulos y textos */
+.card h3 {
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  #nosotros h2 {
+    font-size: 1.8rem;
+  }
+}
