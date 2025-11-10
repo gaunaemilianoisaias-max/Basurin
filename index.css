@@ -1065,3 +1065,11 @@ footer .copyright {
     font-size: 1.8rem;
   }
 }
+
+body, p, li {
+  text-align: justify;
+}
+
+#proyecto p{
+  text-align: center;
+}
